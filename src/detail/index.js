@@ -1,10 +1,11 @@
 import React from 'react';
-import {View, Text, Button, StyleSheet} from 'react-native';
+import {TextInput, View, Text, Button, StyleSheet} from 'react-native';
 
 const Detail = ({navigation}) => {
   return (
     <View style={styles.tutoStyle}>
       <Text>This is Detail Page</Text>
+      <TextInput style={styles.inputTextStyle} />
       <Button
         title={'Go to Main'}
         onPress={() => navigation.navigate('Main')}
@@ -23,6 +24,12 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  inputTextStyle: {
+    height: 40,
+    width: 100,
+    padding: 4,
+    borderWidth: 1,
   },
 });
 
