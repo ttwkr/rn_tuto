@@ -1,17 +1,17 @@
 import React from 'react';
 import {Text, SafeAreaView, View, StyleSheet, Button} from 'react-native';
-import {BackgroundTimer} from 'react-native-background-timer';
+import BackgroundTimer from 'react-native-background-timer';
 
 const Main = ({navigation}) => {
   console.log('Start BackGround Timer');
   let i = 0;
-  BackgroundTimer.runBackgroundTimer(() => {
+  const intervalId = BackgroundTimer.setInterval(() => {
     i++;
     console.log('time : ' + i);
-    if (i === 20) {
-      BackgroundTimer.stopBackgroundTimer();
-    }
-  }, 3000);
+  }, 1000);
+  if (i === 10) {
+    BackgroundTimer.clearInterval(intervalId);
+  }
   return (
     <View style={styles.mainStyle}>
       <Text>Hello World</Text>
