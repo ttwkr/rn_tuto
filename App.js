@@ -1,14 +1,26 @@
 import 'react-native-gesture-handler';
-import {BackgroundTimer} from 'react-native-background-timer';
+import BackgroundTimer from 'react-native-background-timer';
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
+
 import Main from './src/main';
 import Detail from './src/detail';
 
 const Stack = createStackNavigator();
 
 const App = () => {
+  console.log('Start BackGround Timer');
+  let i = 0;
+  const intervalId = BackgroundTimer.setInterval(() => {
+    i++;
+    console.log('time : ' + i);
+
+    if (i === 10) {
+      BackgroundTimer.clearInterval(intervalId);
+    }
+  }, 1000);
+
   return (
     <>
       <NavigationContainer>

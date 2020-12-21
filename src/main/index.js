@@ -1,26 +1,12 @@
 import React from 'react';
 import {Text, SafeAreaView, View, StyleSheet, Button} from 'react-native';
-import BackgroundTimer from 'react-native-background-timer';
+import {DetailButton} from '../button/main';
 
 const Main = ({navigation}) => {
-  console.log('Start BackGround Timer');
-  let i = 0;
-  const intervalId = BackgroundTimer.setInterval(() => {
-    i++;
-    console.log('time : ' + i);
-
-    if (i === 10) {
-      BackgroundTimer.clearInterval(intervalId);
-    }
-  }, 1000);
-
   return (
     <View style={styles.mainStyle}>
       <Text>Hello World</Text>
-      <Button
-        title={'Go to Detail'}
-        onPress={() => navigation.navigate('Detail')}
-      />
+      <DetailButton navigation={navigation} />
     </View>
   );
 };

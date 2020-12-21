@@ -1,5 +1,6 @@
 import React from 'react';
-import {TextInput, View, Text, Button, StyleSheet} from 'react-native';
+import {TextInput, View, Text, Button, StyleSheet, Linking} from 'react-native';
+import {MainButton, GoBack, SettingsButton} from '../button/main';
 
 const Detail = ({navigation}) => {
   return (
@@ -7,14 +8,12 @@ const Detail = ({navigation}) => {
       <Text>This is Detail Page</Text>
       <TextInput style={styles.inputTextStyle} />
       <Button
-        title={'Go to Main'}
-        onPress={() => navigation.navigate('Main')}
-      />
-      <Button
         title={'Go to Detail again'}
         onPress={() => navigation.push('Detail')}
       />
-      <Button title={'Back'} onPress={() => navigation.goBack()} />
+      <MainButton navigation={navigation} />
+      <GoBack navigation={navigation} />
+      <SettingsButton navigation={navigation} />
     </View>
   );
 };
