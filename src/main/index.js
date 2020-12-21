@@ -8,10 +8,12 @@ const Main = ({navigation}) => {
   const intervalId = BackgroundTimer.setInterval(() => {
     i++;
     console.log('time : ' + i);
+
+    if (i === 10) {
+      BackgroundTimer.clearInterval(intervalId);
+    }
   }, 1000);
-  if (i === 10) {
-    BackgroundTimer.clearInterval(intervalId);
-  }
+
   return (
     <View style={styles.mainStyle}>
       <Text>Hello World</Text>
