@@ -14,7 +14,7 @@ const Detail = ({navigation}) => {
       <MainButton navigation={navigation} />
       <GoBack navigation={navigation} />
       <SettingsButton navigation={navigation} />
-      <CameraButton />
+      <CameraButton navigation={navigation} />
     </View>
   );
 };

@@ -5,6 +5,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import Main from '../main';
 import Detail from '../detail';
+import TakeCamera from '../device/camera';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,11 @@ const Navi = () => {
             name={'Detail'}
             component={Detail}
             option={'This Detail'}
+          />
+          <Stack.Screen
+            name={'Camera'}
+            component={TakeCamera}
+            option={'This Camera'}
           />
         </Stack.Navigator>
       </NavigationContainer>

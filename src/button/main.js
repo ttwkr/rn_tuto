@@ -40,10 +40,10 @@ export const DetailButton = ({navigation}) => {
   );
 };
 
-export const CameraButton = () => {
+export const CameraButton = ({navigation}) => {
   return (
     <View>
-      <Button title={'Camera'} onPress={TakeCamera} />
+      <Button title={'Camera'} onPress={() => navigation.navigate('Camera')} />
     </View>
   );
 };
