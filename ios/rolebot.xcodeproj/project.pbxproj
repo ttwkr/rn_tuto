@@ -11,15 +11,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		15D82CAA4E95050689372752 /* libPods-rolebot-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B15140436F52342DE623D5D4 /* libPods-rolebot-tvOS.a */; };
+		15119056BD8BEFA2D6EDBCC0 /* libPods-rolebot-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2087E65A651D5CFD850673 /* libPods-rolebot-tvOSTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* rolebotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rolebotTests.m */; };
-		3AB7626F9683B26BABEC2989 /* libPods-rolebot-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C066A59E08F17A1B940DDA66 /* libPods-rolebot-tvOSTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		958610F49D39A9FF5EE864AF /* libPods-rolebot-rolebotTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D70B55D6C221673456C3D /* libPods-rolebot-rolebotTests.a */; };
-		AF991166E3E00552163DDA5A /* libPods-rolebot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07200051E68F136EFEB07743 /* libPods-rolebot.a */; };
+		91A6814786A6EAEF4CED8DC4 /* libPods-rolebot-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BF1DCD1B63232523C15435 /* libPods-rolebot-tvOS.a */; };
+		B89E639D10142343DA1024D9 /* libPods-rolebot-rolebotTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 824C0F00CD8CB7CF5218A643 /* libPods-rolebot-rolebotTests.a */; };
+		E796F80D582FD86F97195A49 /* libPods-rolebot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BE176386AA397E725E805C /* libPods-rolebot.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		00E356EE1AD99517003FC87E /* rolebotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rolebotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* rolebotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rolebotTests.m; sourceTree = "<group>"; };
-		07200051E68F136EFEB07743 /* libPods-rolebot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rolebot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* rolebot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rolebot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = rolebot/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = rolebot/AppDelegate.m; sourceTree = "<group>"; };
@@ -59,15 +58,16 @@
 		555E81817EDC76BCC6AF0F2A /* Pods-rolebot-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rolebot-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-rolebot-tvOSTests/Pods-rolebot-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		79267C9CEF09180169B62B34 /* Pods-rolebot-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rolebot-tvOS.release.xcconfig"; path = "Target Support Files/Pods-rolebot-tvOS/Pods-rolebot-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rolebot/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		868D70B55D6C221673456C3D /* libPods-rolebot-rolebotTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rolebot-rolebotTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		824C0F00CD8CB7CF5218A643 /* libPods-rolebot-rolebotTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rolebot-rolebotTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2EA6ECAA5F92F440952421 /* Pods-rolebot-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rolebot-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-rolebot-tvOSTests/Pods-rolebot-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		9709164032ACF2988C93CF5D /* Pods-rolebot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rolebot.debug.xcconfig"; path = "Target Support Files/Pods-rolebot/Pods-rolebot.debug.xcconfig"; sourceTree = "<group>"; };
-		B15140436F52342DE623D5D4 /* libPods-rolebot-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rolebot-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C066A59E08F17A1B940DDA66 /* libPods-rolebot-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rolebot-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2087E65A651D5CFD850673 /* libPods-rolebot-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rolebot-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8BE176386AA397E725E805C /* libPods-rolebot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rolebot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97EBCAD258D105500EBFFD5 /* rolebot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = rolebot.entitlements; path = rolebot/rolebot.entitlements; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F47171582B2E4D3583633671 /* Pods-rolebot-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rolebot-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-rolebot-tvOS/Pods-rolebot-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F5BF1DCD1B63232523C15435 /* libPods-rolebot-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rolebot-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				958610F49D39A9FF5EE864AF /* libPods-rolebot-rolebotTests.a in Frameworks */,
+				B89E639D10142343DA1024D9 /* libPods-rolebot-rolebotTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF991166E3E00552163DDA5A /* libPods-rolebot.a in Frameworks */,
+				E796F80D582FD86F97195A49 /* libPods-rolebot.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15D82CAA4E95050689372752 /* libPods-rolebot-tvOS.a in Frameworks */,
+				91A6814786A6EAEF4CED8DC4 /* libPods-rolebot-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AB7626F9683B26BABEC2989 /* libPods-rolebot-tvOSTests.a in Frameworks */,
+				15119056BD8BEFA2D6EDBCC0 /* libPods-rolebot-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,10 +143,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				07200051E68F136EFEB07743 /* libPods-rolebot.a */,
-				868D70B55D6C221673456C3D /* libPods-rolebot-rolebotTests.a */,
-				B15140436F52342DE623D5D4 /* libPods-rolebot-tvOS.a */,
-				C066A59E08F17A1B940DDA66 /* libPods-rolebot-tvOSTests.a */,
+				D8BE176386AA397E725E805C /* libPods-rolebot.a */,
+				824C0F00CD8CB7CF5218A643 /* libPods-rolebot-rolebotTests.a */,
+				F5BF1DCD1B63232523C15435 /* libPods-rolebot-tvOS.a */,
+				AB2087E65A651D5CFD850673 /* libPods-rolebot-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,7 +210,7 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				1DB53FACDC17F8B44EAAFA52 /* [CP] Copy Pods Resources */,
+				03C7CA85CFBB5AEA69104BB9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,7 +232,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				BB80FC1B633BA98C1070C028 /* [CP] Copy Pods Resources */,
+				A3AE58E3EA12116F23D88688 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -380,6 +380,24 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		03C7CA85CFBB5AEA69104BB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rolebot-rolebotTests/Pods-rolebot-rolebotTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rolebot-rolebotTests/Pods-rolebot-rolebotTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		049C41D0C379ED7A87E9D1AC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,24 +418,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1DB53FACDC17F8B44EAAFA52 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rolebot-rolebotTests/Pods-rolebot-rolebotTests-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rolebot-rolebotTests/Pods-rolebot-rolebotTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
@@ -478,7 +478,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BB80FC1B633BA98C1070C028 /* [CP] Copy Pods Resources */ = {
+		A3AE58E3EA12116F23D88688 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

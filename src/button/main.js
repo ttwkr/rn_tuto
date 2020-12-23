@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button, View, Linking} from 'react-native';
+import TakeCamera from '../device/camera';
 
 export const MainButton = ({navigation}) => {
   return (
@@ -35,6 +36,14 @@ export const DetailButton = ({navigation}) => {
   return (
     <View>
       <Button title={'Detail'} onPress={() => navigation.navigate('Detail')} />
+    </View>
+  );
+};
+
+export const CameraButton = () => {
+  return (
+    <View>
+      <Button title={'Camera'} onPress={TakeCamera} />
     </View>
   );
 };
