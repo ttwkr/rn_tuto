@@ -19,6 +19,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		91A6814786A6EAEF4CED8DC4 /* libPods-rolebot-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BF1DCD1B63232523C15435 /* libPods-rolebot-tvOS.a */; };
 		B89E639D10142343DA1024D9 /* libPods-rolebot-rolebotTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 824C0F00CD8CB7CF5218A643 /* libPods-rolebot-rolebotTests.a */; };
+		D91452292593A7AA0049FBC2 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91452282593A7AA0049FBC2 /* File.swift */; };
 		E796F80D582FD86F97195A49 /* libPods-rolebot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BE176386AA397E725E805C /* libPods-rolebot.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,8 @@
 		9709164032ACF2988C93CF5D /* Pods-rolebot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rolebot.debug.xcconfig"; path = "Target Support Files/Pods-rolebot/Pods-rolebot.debug.xcconfig"; sourceTree = "<group>"; };
 		AB2087E65A651D5CFD850673 /* libPods-rolebot-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rolebot-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BE176386AA397E725E805C /* libPods-rolebot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rolebot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D91452272593A7AA0049FBC2 /* rolebot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rolebot-Bridging-Header.h"; sourceTree = "<group>"; };
+		D91452282593A7AA0049FBC2 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		D97EBCAD258D105500EBFFD5 /* rolebot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = rolebot.entitlements; path = rolebot/rolebot.entitlements; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -134,6 +137,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				D91452282593A7AA0049FBC2 /* File.swift */,
+				D91452272593A7AA0049FBC2 /* rolebot-Bridging-Header.h */,
 			);
 			name = rolebot;
 			sourceTree = "<group>";
@@ -296,7 +301,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = S8MBVGW4XS;
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1230;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -572,6 +577,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				D91452292593A7AA0049FBC2 /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,6 +619,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5500BC3F835B2F346C8827DB /* Pods-rolebot-rolebotTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -636,6 +643,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1411F51E49CA7DF834F994E7 /* Pods-rolebot-rolebotTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = rolebotTests/Info.plist;
@@ -674,6 +682,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rolebot;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "rolebot-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -701,6 +710,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rolebot;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "rolebot-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

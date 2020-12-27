@@ -1,6 +1,12 @@
 import React from 'react';
 import {TextInput, View, Text, Button, StyleSheet, Linking} from 'react-native';
-import {MainButton, GoBack, SettingsButton, CameraButton} from '../button/main';
+import {
+  MainButton,
+  GoBack,
+  SettingsButton,
+  CameraButton,
+  LocationButton,
+} from '../button/main';
 
 const Detail = ({navigation}) => {
   return (
@@ -12,9 +18,10 @@ const Detail = ({navigation}) => {
         onPress={() => navigation.push('Detail')}
       />
       <MainButton navigation={navigation} />
-      <GoBack navigation={navigation} />
-      <SettingsButton navigation={navigation} />
       <CameraButton navigation={navigation} />
+      <LocationButton navigation={navigation} />
+      <SettingsButton navigation={navigation} />
+      <GoBack navigation={navigation} />
     </View>
   );
 };

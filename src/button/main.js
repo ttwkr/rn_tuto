@@ -47,3 +47,14 @@ export const CameraButton = ({navigation}) => {
     </View>
   );
 };
+
+export const LocationButton = ({navigation}) => {
+  return (
+    <View>
+      <Button
+        title={'Location'}
+        onPress={() => navigation.navigate('Location')}
+      />
+    </View>
+  );
+};
