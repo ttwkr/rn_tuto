@@ -7,6 +7,7 @@ import Main from '../main';
 import Detail from '../detail';
 import TakeCamera from '../device/camera';
 import CurrLocation from '../device/location';
+import SettingPage from '../setting_page';
 
 const Stack = createStackNavigator();
 
@@ -30,6 +31,11 @@ const Navi = () => {
             name={'Location'}
             component={CurrLocation}
             option={'this Location'}
+          />
+          <Stack.Screen
+            name={'SettingPage'}
+            component={SettingPage}
+            option={'this option'}
           />
         </Stack.Navigator>
       </NavigationContainer>

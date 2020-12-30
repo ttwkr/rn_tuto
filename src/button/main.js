@@ -21,12 +21,12 @@ export const GoBack = ({navigation}) => {
   );
 };
 
-export const SettingsButton = () => {
+export const SettingsButton = ({navigation}) => {
   return (
     <View>
       <Button
         title={'Settings'}
-        onPress={() => Linking.openURL('app-settings:')}
+        onPress={() => navigation.navigate('SettingPage')}
       />
     </View>
   );
