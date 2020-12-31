@@ -12,6 +12,7 @@ const Detail = ({navigation}) => {
   return (
     <View style={styles.tutoStyle}>
       <Text>This is Detail Page</Text>
+      <Text>Test Jira</Text>
       <TextInput style={styles.inputTextStyle} />
       <Button
         title={'Go to Detail again'}
