@@ -1,22 +1,46 @@
 import React from 'react';
 import {View, Text, Button, StyleSheet} from 'react-native';
-import {
-  MainButton,
-  GoBack,
-  SettingsButton,
-  CameraButton,
-  LocationButton,
-  FunctionTestButton,
-} from '../button/main';
+import {ListItem, Icon} from 'react-native-elements';
+import {MainButton, GoBack} from '../button/main';
 
 const Detail = ({navigation}) => {
+  const list = [
+    {
+      title: 'FunctionTest',
+      icon: 'functions',
+      navigation: 'FunctionTest',
+    },
+    {
+      title: 'Camera',
+      icon: 'camera',
+      navigation: 'Camera',
+    },
+    {
+      title: 'Location',
+      icon: 'location-on',
+      navigation: 'Location',
+    },
+    {
+      title: 'Setting',
+      icon: 'settings',
+      navigation: 'SettingPage',
+    },
+  ];
+
   return (
-    <View style={styles.tutoStyle}>
-      <Text>This is Detail Page</Text>
-      <FunctionTestButton navigation={navigation} />
-      <CameraButton navigation={navigation} />
-      <LocationButton navigation={navigation} />
-      <SettingsButton navigation={navigation} />
+    <View>
+      {list.map((item, i) => (
+        <ListItem
+          key={i}
+          bottomDivider
+          onPress={() => navigation.navigate(item.navigation)}>
+          <Icon name={item.icon} />
+          <ListItem.Content>
+            <ListItem.Title>{item.title}</ListItem.Title>
+          </ListItem.Content>
+          <ListItem.Chevron />
+        </ListItem>
+      ))}
       <Button
         title={'Go to Detail again'}
         onPress={() => navigation.push('Detail')}
@@ -26,19 +50,5 @@ const Detail = ({navigation}) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  tutoStyle: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  inputTextStyle: {
-    height: 40,
-    width: 100,
-    padding: 4,
-    borderWidth: 1,
-  },
-});
 
 export default Detail;
