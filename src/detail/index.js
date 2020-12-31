@@ -1,26 +1,27 @@
 import React from 'react';
-import {TextInput, View, Text, Button, StyleSheet, Linking} from 'react-native';
+import {View, Text, Button, StyleSheet} from 'react-native';
 import {
   MainButton,
   GoBack,
   SettingsButton,
   CameraButton,
   LocationButton,
+  FunctionTestButton,
 } from '../button/main';
 
 const Detail = ({navigation}) => {
   return (
     <View style={styles.tutoStyle}>
       <Text>This is Detail Page</Text>
-      <TextInput style={styles.inputTextStyle} />
+      <FunctionTestButton navigation={navigation} />
+      <CameraButton navigation={navigation} />
+      <LocationButton navigation={navigation} />
+      <SettingsButton navigation={navigation} />
       <Button
         title={'Go to Detail again'}
         onPress={() => navigation.push('Detail')}
       />
       <MainButton navigation={navigation} />
-      <CameraButton navigation={navigation} />
-      <LocationButton navigation={navigation} />
-      <SettingsButton navigation={navigation} />
       <GoBack navigation={navigation} />
     </View>
   );

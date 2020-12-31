@@ -58,3 +58,14 @@ export const LocationButton = ({navigation}) => {
     </View>
   );
 };
+
+export const FunctionTestButton = ({navigation}) => {
+  return (
+    <View>
+      <Button
+        title={'Function Test'}
+        onPress={() => navigation.navigate('FunctionTest')}
+      />
+    </View>
+  );
+};

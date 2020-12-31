@@ -8,6 +8,7 @@ import Detail from '../detail';
 import TakeCamera from '../device/camera';
 import CurrLocation from '../device/location';
 import SettingPage from '../setting_page';
+import FunctionTest from '../detail/functest';
 
 const Stack = createStackNavigator();
 
@@ -36,6 +37,11 @@ const Navi = () => {
             name={'SettingPage'}
             component={SettingPage}
             option={'this option'}
+          />
+          <Stack.Screen
+            name={'FunctionTest'}
+            component={FunctionTest}
+            option={'this function test'}
           />
         </Stack.Navigator>
       </NavigationContainer>
